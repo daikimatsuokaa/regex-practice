@@ -1,32 +1,83 @@
-/* body全体の基本レイアウト */
 body {
     font-family: sans-serif;
     margin: 20px;
   }
   
-  /* エラー表示用 */
+  .lesson-selector {
+    margin-bottom: 10px;
+  }
+  #lessonSelect {
+    margin-left: 6px;
+  }
+  
+  #lessonInfo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .regex-input-area {
+    margin-bottom: 10px;
+  }
+  #regexInput {
+    width: 320px;
+    margin-left: 6px;
+  }
+  
+  /* エラー表示 */
   .error {
     color: red;
-    margin-left: 10px;
+    margin-left: 8px;
   }
   
-  /* マッチ部分のハイライト */
-  .highlight {
-    background-color: yellow;
+  /* レッスンタイトル */
+  #lessonTitle {
+    margin: 0;
+    font-size: 1.2rem;
   }
   
-  /* テキスト行を少し間隔あけて表示 */
-  .text-line {
-    margin: 5px 0;
+  /* 問題ブロック全体 */
+  .problem-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
   }
   
-  /* ○×アイコンの装飾 */
-  .result-icon {
-    margin-left: 10px;
-    color: green;
+  /* 問題タイトル */
+  .problem-title {
     font-weight: bold;
+    margin-bottom: 6px;
   }
-  .result-icon.ng {
+  
+  /* テスト行の表示 */
+  .test-line {
+    font-family: monospace;
+    margin-bottom: 4px;
+  }
+  
+  /* 合否表示 */
+  .result {
+    font-weight: bold;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  .ok {
+    color: green;
+  }
+  .ng {
     color: red;
+  }
+  
+  /* キャプチャ結果テーブル */
+  .capture-table {
+    border-collapse: collapse;
+    margin-top: 8px;
+  }
+  .capture-table th,
+  .capture-table td {
+    border: 1px solid #aaa;
+    padding: 4px 6px;
+  }
+  .capture-table th {
+    background-color: #f5f5f5;
   }
   
