@@ -1,0 +1,32 @@
+/* body全体の基本レイアウト */
+body {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  
+  /* エラー表示用 */
+  .error {
+    color: red;
+    margin-left: 10px;
+  }
+  
+  /* マッチ部分のハイライト */
+  .highlight {
+    background-color: yellow;
+  }
+  
+  /* テキスト行を少し間隔あけて表示 */
+  .text-line {
+    margin: 5px 0;
+  }
+  
+  /* ○×アイコンの装飾 */
+  .result-icon {
+    margin-left: 10px;
+    color: green;
+    font-weight: bold;
+  }
+  .result-icon.ng {
+    color: red;
+  }
+  

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>正規表現 練習サイト (サンプル)</title>
+  <!-- 外部CSSの読み込み -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>正規表現 練習サイト (サンプル)</h1>
+  <p>以下の入力欄に正規表現を入力すると、下のテキストでマッチした部分がハイライト表示され、○×が付きます。</p>
+
+  <!-- 正規表現を入力する欄 -->
+  <div>
+    <input type="text" id="regexInput" placeholder="ここに正規表現を入力" />
+    <span id="errorMessage" class="error"></span>
+  </div>
+  <hr />
+
+  <!-- テスト対象のテキスト行を表示する領域 -->
+  <div id="testContainer">
+    <!-- JSでハイライトするため、data-text属性に元の文字列を保持 -->
+    <div class="text-line" data-text="abcdefg">abcdefg</div>
+    <div class="text-line" data-text="abcde">abcde</div>
+    <div class="text-line" data-text="abc">abc</div>
+  </div>
+
+  <!-- 外部JSの読み込み -->
+  <script src="script.js"></script>
+</body>
+</html>
