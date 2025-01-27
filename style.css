@@ -1,83 +1,74 @@
 body {
-    font-family: sans-serif;
-    margin: 20px;
-  }
-  
-  .lesson-selector {
-    margin-bottom: 10px;
-  }
-  #lessonSelect {
-    margin-left: 6px;
-  }
-  
-  #lessonInfo {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .regex-input-area {
-    margin-bottom: 10px;
-  }
-  #regexInput {
-    width: 320px;
-    margin-left: 6px;
-  }
-  
-  /* エラー表示 */
-  .error {
-    color: red;
-    margin-left: 8px;
-  }
-  
-  /* レッスンタイトル */
-  #lessonTitle {
-    margin: 0;
-    font-size: 1.2rem;
-  }
-  
-  /* 問題ブロック全体 */
-  .problem-item {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  /* 問題タイトル */
-  .problem-title {
-    font-weight: bold;
-    margin-bottom: 6px;
-  }
-  
-  /* テスト行の表示 */
-  .test-line {
-    font-family: monospace;
-    margin-bottom: 4px;
-  }
-  
-  /* 合否表示 */
-  .result {
-    font-weight: bold;
-    margin-top: 6px;
-    margin-bottom: 6px;
-  }
-  .ok {
-    color: green;
-  }
-  .ng {
-    color: red;
-  }
-  
-  /* キャプチャ結果テーブル */
-  .capture-table {
-    border-collapse: collapse;
-    margin-top: 8px;
-  }
-  .capture-table th,
-  .capture-table td {
-    border: 1px solid #aaa;
-    padding: 4px 6px;
-  }
-  .capture-table th {
-    background-color: #f5f5f5;
-  }
-  
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.lesson-selector {
+  margin-bottom: 10px;
+}
+
+#lessonSelect {
+  margin-left: 6px;
+}
+
+/* 各問題を囲むボックス */
+.problem-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.problem-title {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* 正規表現入力エリア（問題ごと） */
+.regex-input-area {
+  margin: 10px 0;
+}
+.regex-input-area label {
+  display: inline-block;
+  width: 120px; /* ラベル幅は適宜調整 */
+}
+.regex-input {
+  width: 300px;
+  margin-right: 6px;
+}
+
+/* エラーメッセージ */
+.error-message {
+  color: red;
+  margin-left: 8px;
+}
+
+/* テスト行 */
+.test-line {
+  font-family: monospace;
+  margin-bottom: 4px;
+}
+
+/* 問題の合否表示 */
+.result {
+  font-weight: bold;
+  margin-top: 6px;
+}
+.ok {
+  color: green;
+}
+.ng {
+  color: red;
+}
+
+/* キャプチャテーブル */
+.capture-table {
+  border-collapse: collapse;
+  margin-top: 6px;
+}
+.capture-table th,
+.capture-table td {
+  border: 1px solid #aaa;
+  padding: 4px 6px;
+}
+.capture-table th {
+  background-color: #f5f5f5;
+}

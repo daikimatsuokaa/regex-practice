@@ -2,37 +2,26 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>複数レッスン＆複数問題 正規表現キャプチャ練習</title>
+  <title>複数レッスン＆複数問題 - 正規表現キャプチャ練習</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>複数レッスン & 複数問題対応 正規表現キャプチャ練習</h1>
+  <h1>複数レッスン＆複数問題 - 正規表現キャプチャ練習</h1>
 
-  <!-- レッスンを選ぶドロップダウン -->
   <div class="lesson-selector">
     <label for="lessonSelect">レッスンを選択：</label>
     <select id="lessonSelect"></select>
   </div>
 
-  <!-- レッスン概要（タイトル・説明） -->
   <div id="lessonInfo">
     <h2 id="lessonTitle"></h2>
     <p id="lessonDescription"></p>
   </div>
 
-  <!-- ユーザーが正規表現を入力 -->
-  <div class="regex-input-area">
-    <label for="regexInput">正規表現パターン:</label>
-    <input type="text" id="regexInput" placeholder="ここに正規表現を入力..." />
-    <span id="errorMessage" class="error"></span>
-  </div>
-
-  <hr />
-
-  <!-- レッスン内の問題を表示するコンテナ -->
+  <!-- 各問題一覧を表示する領域 -->
   <div id="problemsContainer"></div>
 
-  <!-- スクリプト読み込み順に注意: 先に各レッスン、最後にメイン -->
+  <!-- レッスンファイルを先に読み込み、最後にscript.jsを読み込む -->
   <script src="scripts/lesson1.js"></script>
   <script src="scripts/lesson2.js"></script>
   <script src="scripts/script.js"></script>
